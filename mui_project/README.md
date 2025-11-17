@@ -77,17 +77,17 @@ La efectividad del MUI se maximiza al aplicar la técnica de preprocesamiento ad
 
 ## 🛠️ Instalación y Ejecución
 
-Para desplegar y usar el MUI, sigue estos pasos:
+Para desplegar y usar el MUI, segui estos pasos:
 
-1.  **Entorno:** Activa el entorno Conda donde instalaste todas las dependencias (ej., `p_imagenes`).
+1.  **Entorno:** Activa el entorno que uses, en mi caso Conda donde tengo instaladas todas las dependencias (`p_imagenes`).
     ```bash
     conda activate p_imagenes
     ```
-2.  **Archivos del Modelo:** Asegúrate de que los archivos de la red DNN (`deploy.prototxt` y `res10_300x300_ssd_iter_140000.caffemodel`) estén en la carpeta raíz del proyecto (`mui_project`).
-3.  **Ejecución:** Lanza la aplicación desde la carpeta raíz.
+2.  **Ejecución:** Lanza la aplicación desde la carpeta raíz.
     ```bash
     streamlit run app.py
 
     ```
+
 
 
