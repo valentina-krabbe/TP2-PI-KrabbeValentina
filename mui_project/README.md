@@ -40,7 +40,7 @@ El MUI se enfoca en tres fases de análisis, utilizando el preprocesamiento adec
 
 | Elemento Analizado | Propósito | Tecnología Clave |
 | :--- | :--- | :--- |
-| **Personas** | **Detección de Rostros:** Ubica y cuenta personas con alta **precisión y robustez**, evitando falsos positivos comunes en detectores simples. | **OpenCV DNN (SSD):** Red Neuronal Profunda optimizada para detección en tiempo real. |
+| **Personas** | **Detección de Rostros:** Ubica y cuenta personas. | **OpenCV DNN (SSD):** Red Neuronal Profunda optimizada para detección rápida. |
 | **Edificios / Infraestructura**| **Análisis Estructural (ORB):** Identifica puntos clave (esquinas, intersecciones) para crear una "huella dactilar" estructural. | **ORB:** Algoritmo rápido usado para **monitorear deterioro** y el **registro** de imágenes de infraestructura. |
 
 ---
@@ -89,4 +89,5 @@ Para desplegar y usar el MUI, sigue estos pasos:
     streamlit run app.py
 
     ```
+
 
