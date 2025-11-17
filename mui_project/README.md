@@ -15,10 +15,15 @@ El **Monitor Urbano Inteligente (MUI)** es una aplicación modular de Visión po
 
 El MUI se enfoca en tres fases de análisis, utilizando el preprocesamiento adecuado para cada tarea:
 
-### 📂 Estructura Final del Proyecto
 
-mui_project/ ├── app.py # ⬅️ Archivo Principal de Streamlit (Interfaz y Lógica) ├── models.py # ⬅️ Carga de Modelos (DNN, SegFormer) ├── processing_functions.py # ⬅️ Lógica de CV (CLAHE, DNN, ORB, Umbralización) ├── README.md # ⬅️ Documentación del proyecto, contexto y recomendaciones ├── requirements.txt # ⬅️ Lista de dependencias del entorno | ├── haarcascade_frontalface_default.xml # ⬅️ Detector Clásico (Mantenido por completitud) ├── deploy.prototxt # ⬅️ Configuración del Modelo DNN (OpenCV) ├── res10_300x300_ssd_iter_140000.caffemodel # ⬅️ Pesos del Modelo DNN | └── images/ # ⬅️ Carpeta de Imágenes de Prueba (Escenas Urbanas) ├── street_scene_1.jpg └── etc.
+### Resumen de Roles y Ubicación de Archivos
 
+| Archivo/Carpeta | Contenido | Rol en el Proyecto |
+| :--- | :--- | :--- |
+| **`app.py`** | Código Streamlit | Define la interfaz de usuario. |
+| **`models.py`** | Código Python | Inicializa los modelos pesados. |
+| **`deploy.prototxt` / `.caffemodel`** | Modelos DNN | Pesos y arquitectura de la red de detección de rostros. |
+| **`images/`** | Imágenes (JPG, PNG) | Recursos para probar las funcionalidades. |
 ### 1. 🗺️ Fase 1: Segmentación Categórica (Análisis de Contexto)
 
 **Objetivo:** Proporcionar un **mapa temático** de la escena, identificando la distribución y el tipo de entorno urbano.
@@ -82,4 +87,5 @@ Para desplegar y usar el MUI, sigue estos pasos:
 3.  **Ejecución:** Lanza la aplicación desde la carpeta raíz.
     ```bash
     streamlit run app.py
+
     ```
